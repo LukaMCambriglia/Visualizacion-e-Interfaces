@@ -16,7 +16,7 @@
 }
 
 .navbar-collapse {
-  display: flex !important;
+  display: flex ;
   flex-basis: auto;
 }
 
@@ -158,4 +158,40 @@ main {
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; /* Previene el desbordamiento horizontal */
+  }
+  
+  .subjects,
+  .study-plan {
+    width: 100%; /* Asegura que las tarjetas no sean más anchas que la vista del celular */
+    max-width: 100%; /* Ancho máximo de las tarjetas igual al ancho del dispositivo */
+    margin: 1rem auto; /* Márgenes para centrar y separar las tarjetas */
+    padding: 1rem;
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+  }
+
+  .col-md-1 {
+    display: none; /* Esconde la columna de tamaño medio */
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 1px;
+  }
+  .accordion-body {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .user-info{
+    display: none;
+  } 
 }
