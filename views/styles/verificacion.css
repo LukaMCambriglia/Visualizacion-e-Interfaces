@@ -1,0 +1,95 @@
+body {
+  background-color: white !important;
+  max-height: 100vh; /* altura máxima del contenedor */
+  overflow-y: auto; /* permite el desplazamiento vertical */
+}
+
+.div-superior {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  margin-top: 4rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.busqueda-boton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grilla-materias {
+  margin: 2rem;
+}
+
+.delete {
+  width: 3rem;
+  height: 3rem;
+  background-color: #972133;
+}
+
+.icono-delete {
+  width: 1.5rem;
+}
+
+.page-link {
+  color: #972133;
+}
+
+.btn-primary {
+  background-color: #736b66;
+  color: #401115;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #292929;
+  color: #ffffff;
+}
+
+.btn-primary:active {
+  background-color: #292929;
+}
+
+.search-button svg {
+  display: none;
+}
+
+.search-button + span {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .grilla-materias {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .btn .d-none {
+    display: none;
+  }
+
+  .bi-search {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .d-flex {
+    display: flex !important;
+    margin-right: 1rem;
+  }
+
+  .search-button svg {
+    display: inline-block;
+  }
+
+  .btn-primary span {
+    display: none !important;
+  }
+
+  .btn-primary svg {
+    display: inline-block;
+  }
+}

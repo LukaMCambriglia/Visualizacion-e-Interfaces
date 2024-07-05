@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/home-style.css" />
+    <link href="styles/header.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/verificacion.css" />
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="styles/header-perfil.css" />
+
+    <title>Verificación de Materias</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html" id="brand">
+            <img
+              src="img/UAD-logo-img.png"
+              alt="UAD"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="verificacionMaterias.html">Mi Cursada</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#"></a>
+              </li>
+            </ul>
+            <a class="user-info" href="#">
+              Luka Maciel
+              <img src="img/perfil-img.jpg" alt="Foto de perfil" />
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="divider"></div>
+      <div class="container-fluid">
+        <a class="navbar-carrera" href="#"
+          >Materias en proceso de verificación</a
+        >
+      </div>
+    </header>
+    <div class="div-superior">
+      <div class="busqueda-boton">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar asignatura" aria-label="Search">
+          <button class="btn btn-outline-success d-flex align-items-center search-button" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+            <span class="d-none d-md-inline-block">Buscar</span>
+          </button>
+        </form>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <a href="ofertaMaterias.html">
+            <button type="button" class="btn btn-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-plus"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                ></path>
+              </svg>
+              <span class="d-inline agregar-materia">Agregar materia</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="grilla-materias">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Asignatura</th>
+            <th scope="col">Comisión</th>
+            <th scope="col">Días</th>
+            <th scope="col">Horario</th>
+            <th scope="col">Estado</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">2625</th>
+            <td>Base de Datos I</td>
+            <td>02-4966</td>
+            <td>Martes-Sábados</td>
+            <td>08.00-12.00hs</td>
+            <td><span class="badge text-bg-success">Aceptada</span></td>
+            <td>
+              <button type="button" class="btn btn-secondary delete">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-trash3 icono-delete"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"
+                  ></path>
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2626</th>
+            <td>Programación Web II</td>
+            <td>03-4900</td>
+            <td>Lunes</td>
+            <td>08.00-12.00hs</td>
+            <td><span class="badge text-bg-secondary">En espera</span></td>
+            <td>
+              <button type="button" class="btn btn-secondary delete">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-trash3 icono-delete"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"
+                  ></path>
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2623</th>
+            <td>Programación Básica II</td>
+            <td>03-3900</td>
+            <td>Miércoles</td>
+            <td>19.00-23.00hs</td>
+            <td><span class="badge text-bg-secondary">En espera</span></td>
+            <td>
+              <button type="button" class="btn btn-secondary delete">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-trash3 icono-delete"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"
+                  ></path>
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2631</th>
+            <td>Visualización e Interfaces</td>
+            <td>02-5900</td>
+            <td>Viernes</td>
+            <td>19.00-23.00hs</td>
+            <td><span class="badge text-bg-danger">Denegada</span></td>
+            <td>
+              <button type="button" class="btn btn-secondary delete">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="white"
+                  class="bi bi-trash3 icono-delete"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"
+                  ></path>
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2634</th>
+            <td>Tecnología de Redes</td>
+            <td>02-2200</td>
+            <td>Jueves</td>
+            <td>08.00-12.00hs</td>
+            <td><span class="badge text-bg-success">Aceptada</span></td>
+            <td>
+              <button type="button" class="btn btn-secondary delete">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#FFFFFF"
+                  class="bi bi-trash3 icono-delete"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"
+                  ></path>
+                </svg>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link">Anterior</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+        <li class="page-item disabled">
+          <a class="page-link" href="#">Siguiente</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

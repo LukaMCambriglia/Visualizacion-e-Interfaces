@@ -1,0 +1,186 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.bg-img-1 {
+  background-image: url("../img/universidad-img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-img-2 {
+  background-image: url("../img/universidad2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-img-3 {
+  background-image: url("../img/universidad3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.options-nav {
+  background-color: #401115;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nav-tabs {
+  border-bottom: #701122 !important;
+}
+.nav-link.active {
+  background-color: #701122 !important;
+  border-color: #701122 !important;
+}
+
+.options-nav {
+  padding: 0px !important;
+}
+
+.navbar-toggler {
+  border: 0px;
+  padding-right: 0px !important;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.carousel-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.w-100 {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.carousel-indicators {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 11rem;
+  margin-top: -2rem;
+}
+
+.carousel-indicators button {
+  border-radius: 50%;
+  width: 1em !important;
+  height: 1em !important;
+  margin: 0.3em !important;
+  background-color: #000;
+}
+
+.card {
+  background: #401115c7 !important;
+  color: rgb(255, 255, 255) !important;
+  font-family: "Poppins", sans-serif !important;
+  margin-top: 5rem;
+}
+
+.card h4 {
+  font-size: 2.5rem;
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.card p {
+  font-size: 0.9em !important;
+}
+
+.card-container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 100%;
+}
+
+.botoninscribir {
+  background-color: #972133 !important;
+  border: 0px !important;
+}
+
+.botoninscribir:hover {
+  background-color: #701122 !important;
+}
+
+.botonheader {
+  background-color: #972133 !important;
+  border: 0px;
+  width: 8em;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0px !important;
+  }
+
+  .navbar-brand {
+    width: 4em;
+    padding: 0px;
+  }
+  .navbar-brand img {
+    width: 100%;
+    margin-left: 0px !important;
+  }
+
+  .botonheader {
+    margin-left: 1rem;
+    /* padding-left: 0px !important; */
+  }
+
+  .botoninscribir {
+    width: 10rem !important;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    width: 100% !important;
+    text-align: center;
+    background-color: #401114;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 660px) {
+  .carousel-indicators {
+    margin-bottom: 5rem;
+  }
+}
+
+.main-contenedor {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}

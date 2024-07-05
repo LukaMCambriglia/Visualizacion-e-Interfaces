@@ -1,0 +1,68 @@
+.position-relative {
+    position: relative !important;
+    display: contents;
+}
+
+.titulo-error{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: rgb(233, 21, 21);
+}
+
+.bi-exclamation-octagon-fill{
+    height: 2rem;
+    width: 2rem;
+    color: rgb(233, 21, 21);
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+    width: 100%;
+}
+
+.col-md-2{
+    width: 35%;
+}
+
+.col-md-4{
+    width: 70%;
+}
+
+.btn-custom{
+    width: 30%;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+@media (max-width: 768px) {
+    
+    .card{
+        width: 23rem !important;
+        height: max-content;
+    }
+
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 17rem !important;
+    }
+
+    .col-md-4 {
+        width: 72% !important;
+    }
+
+    .btn-custom {
+        width: 48% !important;
+    }
+
+    .navbar-carrera {
+        font-size: 0.9rem !important;
+    }
+
+    .navbar-collapse{
+        display: none !important;
+    }
+}
